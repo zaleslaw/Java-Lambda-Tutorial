@@ -9,9 +9,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by Alexey_Zinovyev on 24.10.2016.
- */
 public class CollectorsSample {
 
         public static void main(String[] args) {
