@@ -16,8 +16,8 @@ public class YoungEnterpriseCode {
                 .filter(e -> e.getLevel() > 2)
                 .map(e -> e.getDepartment())
                 .distinct()
-                .sorted(Comparator.comparing(e->e.getName()))
-                .forEach(e-> System.out.println(e.getName()));
+                .sorted(Comparator.comparing(e -> e.getName()))
+                .forEach(e -> System.out.println(e.getName()));
     }
 
     private static List<Employee> hireFourEmployees() {
