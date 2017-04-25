@@ -2,7 +2,6 @@ package Chapter_3_Migration_from_7_to_8.beans;
 
 public class Department {
 
-
     private String name;
 
     public String getName() {

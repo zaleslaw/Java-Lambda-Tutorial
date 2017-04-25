@@ -4,6 +4,13 @@ package Chapter_3_Migration_from_7_to_8.beans;
 
 public class Employee {
 
+    private int age;
+    private String name;
+    private String skill;
+    private int level;
+    private Department department;
+
+
     public Employee(int age, String name, String skill, int level, Department department) {
         this.name = name;
         this.age = age;
@@ -11,13 +18,6 @@ public class Employee {
         this.level = level;
         this.department = department;
     }
-
-    private int age;
-    private String name;
-    private String skill;
-    private int level;
-    private Department department;
-
 
     public Department getDepartment() {
         return department;
