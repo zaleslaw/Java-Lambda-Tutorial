@@ -18,6 +18,15 @@ public class YoungEnterpriseCode {
                 .distinct()
                 .sorted(Comparator.comparing(e -> e.getName()))
                 .forEach(e -> System.out.println(e.getName()));
+
+        //Problem
+        //System.out.println("Average age is " + employees.stream().map(e-> e.getAge()).avg()); //??? Where's average?
+
+        //Solution
+        System.out.println("Average age is " + employees.stream().mapToInt(Employee::getAge).average().getAsDouble());
+
+        //or
+        System.out.println(employees.stream().mapToInt(Employee::getAge).summaryStatistics());
     }
 
     private static List<Employee> hireFourEmployees() {

@@ -2,7 +2,7 @@ package Chapter_1_Lambda_Start.beans;
 
 
 /**
- * Very bad designed class
+ * Not very bad designed class
  */
 public class BusinessTaskUpdateCustomerAge implements BusinessTask {
     @Override

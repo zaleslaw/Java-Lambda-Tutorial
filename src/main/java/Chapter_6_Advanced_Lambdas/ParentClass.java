@@ -1,4 +1,4 @@
-package Chapter_1_Lambda_Start.beans;
+package Chapter_6_Advanced_Lambdas;
 
 import java.util.Date;
 

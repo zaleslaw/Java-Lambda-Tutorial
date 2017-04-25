@@ -50,6 +50,16 @@ public class OldEnterpriseCode {
         for (Department dep : resultList) {
             System.out.println(dep.getName());
         }
+
+
+        int sum = 0;
+        int counter = 0;
+        for(Employee employee : employees) {
+            sum += employee.getAge();
+            counter++;
+        }
+
+        System.out.println("Average age is " + (sum/counter));
     }
 
     private static List<Employee> hireFourEmployees() {

@@ -54,7 +54,7 @@ public class Ex_6_DirtyLambdas {
         pi+=0.000092;
         System.out.println(pi);*/
 
-        // 3.14_00_92 WOW!!! Changes from lambda were lost!! Why???
+        // 3.14_00_92 WOW!!! Changes from lambda were lost!! Why??? Due to different values.
 
         // STEP 5: Let's hack it according IDEA tip with one element array
         /*final double[] piArray = {3.14};

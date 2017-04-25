@@ -19,7 +19,7 @@ public class Ex_5_Anonymous_Lambda_Task_With_Default_Method {
                 /*new BusinessTask() {
                     @Override
                     public void updateStateInDB() {
-                        // you can skip thi implementation
+                        // you can skip this implementation
                     }
                 }.updateStateInDBByDefault();*/
 

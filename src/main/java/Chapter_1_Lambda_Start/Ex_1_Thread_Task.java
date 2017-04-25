@@ -16,8 +16,5 @@ public class Ex_1_Thread_Task {
         task2.updateStateInDB();
         task2.run();
 
-
     }
-
-
 }

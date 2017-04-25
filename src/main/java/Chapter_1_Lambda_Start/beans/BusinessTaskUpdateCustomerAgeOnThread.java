@@ -17,7 +17,6 @@ public class BusinessTaskUpdateCustomerAgeOnThread extends Thread implements Bus
 
     }
 
-
     /**
      * In this class are mixed thread logic and business logic
      */

@@ -1,6 +1,4 @@
-package Chapter_1_Lambda_Start;
-
-import Chapter_1_Lambda_Start.beans.ParentClass;
+package Chapter_6_Advanced_Lambdas;
 
 import java.util.Date;
 import java.util.function.Predicate;

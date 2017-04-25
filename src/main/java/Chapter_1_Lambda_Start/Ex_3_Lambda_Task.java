@@ -3,7 +3,7 @@ package Chapter_1_Lambda_Start;
 import Chapter_1_Lambda_Start.beans.BusinessTaskUpdateCustomerAge;
 
 /**
- * Change anonymous class implements Runnable on lambda
+ * Change anonymous class implements Runnable to lambda
  */
 public class Ex_3_Lambda_Task {
     public static void main(String[] args) {
