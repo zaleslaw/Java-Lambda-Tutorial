@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Alexey_Zinovyev on 29-May-17.
  */
-public class Ex_4_Joining {
+public class Ex_5_Joining {
     public static void main(String[] args) {
 
         final List<Employee> employees = YoungEnterpriseCode.hireFourEmployees();
