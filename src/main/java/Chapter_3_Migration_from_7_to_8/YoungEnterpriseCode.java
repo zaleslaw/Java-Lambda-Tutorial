@@ -29,7 +29,7 @@ public class YoungEnterpriseCode {
         System.out.println(employees.stream().mapToInt(Employee::getAge).summaryStatistics());
     }
 
-    private static List<Employee> hireFourEmployees() {
+    public static List<Employee> hireFourEmployees() {
 
         Department financialDepartment = new Department("Financial");
         Department mobileDepartment = new Department("Mobile");
