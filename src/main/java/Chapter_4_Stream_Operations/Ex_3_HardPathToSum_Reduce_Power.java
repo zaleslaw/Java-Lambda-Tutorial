@@ -7,9 +7,9 @@ import static java.util.stream.Collectors.summingInt;
 /**
  * A few approaches to sum ints along array
  */
-public class HardPathToSum {
+public class Ex_3_HardPathToSum_Reduce_Power {
     public static void main(String[] args) {
-        Stream<Integer> ints = Stream.of(1,2,3,4,5,6,7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17);
+        Stream<Integer> ints = Stream.of(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17);
         int sum = 0;
         //ints.forEach(e -> { sum+= e});
         System.out.println(sum);

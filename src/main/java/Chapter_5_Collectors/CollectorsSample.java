@@ -6,7 +6,9 @@ import Chapter_3_Migration_from_7_to_8.beans.Employee;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class CollectorsSample {
@@ -21,6 +23,9 @@ public class CollectorsSample {
                     .sorted(Comparator.comparing(e->e.getName()))
                     .collect(Collectors.toList());
 
+            System.out.println(departmentNames.getClass());
+            departmentNames.forEach(System.out::println);
+
             /*
             So, what concrete type (subclass) of List is being used here? Are there any guarantees?
 If you look at the documentation of Collectors#toList(), it states that -
@@ -28,15 +33,16 @@ If you look at the documentation of Collectors#toList(), it states that -
 If you want a particular implementation to be returned, you can use Collectors#toCollection(Supplier) instead.
              */
 
-            /*Supplier<List<String>> supplier = () -> new LinkedList<>();
-            List<String> departmentNames2 = employees.stream()
+
+            List departmentNames2 = employees.stream()
                     .filter(e -> e.getLevel() > 2)
                     .map(e -> e.getDepartment())
                     .distinct()
                     .sorted(Comparator.comparing(e->e.getName()))
-                    .collect(Collectors.toCollection(LinkedList::new));*/
+                    .collect(Collectors.toCollection(LinkedList::new));
 
-
+            System.out.println(departmentNames2.getClass());
+            departmentNames2.forEach(System.out::println);
 
 
         }
